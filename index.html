@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>404</title>
+</head>
+<body>
+    <div id="container">
+        <div class="content">
+            <h2>404</h2>
+            <h4>Opps! Nie znaleziono strony!</h4>
+            <p>Strona której szukasz nie jest udostępniona. Możliwe że pliki ważyły zbyt dużo aby dodać je na GitHuba. Napisz do mnie jeśli chcesz uzyskać dostęp do plików.</p>
+            <a href="#" onclick="closeTab()">Wróć do poprzedniej strony.</a>
+        </div>
+    </div>
+    <script>
+        function closeTab(){
+            window.close();
+        }
+        var container = document.getElementById('container');
+        window.onmousemove = function(e){
+            var x = -e.clientX/5,
+            y = -e.clientY/5;
+            container.style.backgroundPositionX = x + 'px';
+            container.style.backgroundPositionY = y + 'px';
+        }
+    </script>
+</body>
+</html>
